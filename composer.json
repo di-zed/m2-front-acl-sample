@@ -1,0 +1,19 @@
+{
+    "name": "dized/module-front-acl-sample",
+    "description": "Sample module for the DiZed Magento 2 Front ACL Module",
+    "version": "1.0.0",
+    "type": "magento2-module",
+    "homepage": "https://github.com/di-zed/m2-front-acl-sample",
+    "license": "MIT",
+    "require": {
+        "dized/module-front-acl": "*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "DiZed\\FrontAclSample\\": ""
+        }
+    }
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author DiZed Team
+ * @copyright Copyright (c) DiZed (https://github.com/di-zed/)
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block class="DiZed\FrontAclSample\Block\Customer\Account\Permissions"
+                   name="dized.customer.account.permissions"
+                   template="DiZed_FrontAclSample::customer/account/permissions.phtml"
+                   before="customer_account_dashboard_info"
+                   cacheable="false" />
+        </referenceContainer>
+    </body>
+</page>

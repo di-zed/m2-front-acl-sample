@@ -1,0 +1,22 @@
+<?php
+/**
+ * @author DiZed Team
+ * @copyright Copyright (c) DiZed (https://github.com/di-zed/)
+ */
+
+/** @var \DiZed\FrontAclSample\Block\Customer\Account\Permissions $block */
+/** @var \Magento\Framework\Escaper $escaper */
+?>
+
+<div>
+    <div>
+        <strong><?= $escaper->escapeHtml(__('Role')) ?>:</strong>
+        <span><?= $escaper->escapeHtml($block->getRoleName()) ?></span>
+    </div>
+    <div>
+        <strong><?= $escaper->escapeHtml(__('Permissions')) ?>:</strong>
+        <span><?= $escaper->escapeHtml(implode(', ', $block->getPermissionNames())) ?></span>
+    </div>
+</div>
+
+<br />
